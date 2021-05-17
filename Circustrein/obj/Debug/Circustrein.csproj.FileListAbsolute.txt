@@ -1,0 +1,10 @@
+C:\Users\Sander van Deurzen\source\repos\FONTYS\algoritme\Circustrein\s2-algoritmiek-circustrein\Circustrein\bin\Debug\Circustrein.exe.config
+C:\Users\Sander van Deurzen\source\repos\FONTYS\algoritme\Circustrein\s2-algoritmiek-circustrein\Circustrein\bin\Debug\Circustrein.exe
+C:\Users\Sander van Deurzen\source\repos\FONTYS\algoritme\Circustrein\s2-algoritmiek-circustrein\Circustrein\bin\Debug\Circustrein.pdb
+C:\Users\Sander van Deurzen\source\repos\FONTYS\algoritme\Circustrein\s2-algoritmiek-circustrein\Circustrein\obj\Debug\Circustrein.csprojAssemblyReference.cache
+C:\Users\Sander van Deurzen\source\repos\FONTYS\algoritme\Circustrein\s2-algoritmiek-circustrein\Circustrein\obj\Debug\Circustrein.Properties.Resources.resources
+C:\Users\Sander van Deurzen\source\repos\FONTYS\algoritme\Circustrein\s2-algoritmiek-circustrein\Circustrein\obj\Debug\Circustrein.csproj.GenerateResource.cache
+C:\Users\Sander van Deurzen\source\repos\FONTYS\algoritme\Circustrein\s2-algoritmiek-circustrein\Circustrein\obj\Debug\Circustrein.csproj.CoreCompileInputs.cache
+C:\Users\Sander van Deurzen\source\repos\FONTYS\algoritme\Circustrein\s2-algoritmiek-circustrein\Circustrein\obj\Debug\Circustrein.exe
+C:\Users\Sander van Deurzen\source\repos\FONTYS\algoritme\Circustrein\s2-algoritmiek-circustrein\Circustrein\obj\Debug\Circustrein.pdb
+C:\Users\Sander van Deurzen\source\repos\FONTYS\algoritme\Circustrein\s2-algoritmiek-circustrein\Circustrein\obj\Debug\Circustrein.Form1.resources
