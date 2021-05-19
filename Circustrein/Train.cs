@@ -42,11 +42,6 @@ namespace Circustrein
                 //    dinotype = "carnivore";
                 //    AnimalNotEaten(animalsList, dinotype);
                 //}
-   
-                Wagon wagon = new Wagon();
-                wagon.maxSize = 10;
-
-
                 //if (item.type == "Carnivore")
                 //{
                 //    lb_wagon.Items.Add("Wagon 1: amount " + Remaining);
@@ -54,21 +49,21 @@ namespace Circustrein
 
 
                
-                switch (item.format)
-                {
-                    case 1:
-                        wagon.maxSize = wagon.maxSize - 1;
-                        lb_wagon.Items.Add("Wagon 1: amount" + wagon.maxSize);
-                        break;
-                    case 3:
-                        wagon.maxSize = wagon.maxSize - 3;
-                        lb_wagon.Items.Add("Wagon 1: amount " + wagon.maxSize);
-                        break;
-                    case 5:
-                        wagon.maxSize = wagon.maxSize - 5;
-                        lb_wagon.Items.Add("Wagon 1: amount " + wagon.maxSize);
-                        break;
-                }
+                //switch (item.format)
+                //{
+                //    case 1:
+                //        wagon.maxSize = wagon.maxSize - 1;
+                //        lb_wagon.Items.Add("Wagon 1: amount" + wagon.maxSize);
+                //        break;
+                //    case 3:
+                //        wagon.maxSize = wagon.maxSize - 3;
+                //        lb_wagon.Items.Add("Wagon 1: amount " + wagon.maxSize);
+                //        break;
+                //    case 5:
+                //        wagon.maxSize = wagon.maxSize - 5;
+                //        lb_wagon.Items.Add("Wagon 1: amount " + wagon.maxSize);
+                //        break;
+                //}
             
             }
             
@@ -81,14 +76,27 @@ namespace Circustrein
             //kan een grotere herbivore in een wagon passen 
             foreach (var animal in Animalslist)
             {
-                if (item.type == "Carnivore")
+                if (animal.type == "Carnivore" && animal.isAdded == false)
                 {
-
+                    foreach (var wagon in wagonlist)
+                    {
+                        //de checks of die in een wagon past
+                        //past ie wel:
+                        if (wagon.CarnivorePresent == false)
+                        {
+                            wagon.AddToWagon(animal.name, animal.format, animal.type );
+                            animal.isAdded = true;
+                            break;
+                        }
+                    }
+                    //past ie niet:
+                    if(animal.isAdded == false)
+                    {
+                        wagonlist.Add(new Wagon(animal.name, animal.format, animal.type));
+                        animal.isAdded = true;
+                    }
                 }
-                foreach (var wagon in wagonlist)
-                {
 
-                }
             }
             return true;
         }
