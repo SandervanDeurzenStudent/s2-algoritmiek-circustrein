@@ -102,7 +102,7 @@
             this.btn_sortAnimals.Name = "btn_sortAnimals";
             this.btn_sortAnimals.Size = new System.Drawing.Size(115, 43);
             this.btn_sortAnimals.TabIndex = 6;
-            this.btn_sortAnimals.Text = "Add Animal";
+            this.btn_sortAnimals.Text = "Sort Animals";
             this.btn_sortAnimals.UseVisualStyleBackColor = true;
             this.btn_sortAnimals.Click += new System.EventHandler(this.button1_Click);
             // 

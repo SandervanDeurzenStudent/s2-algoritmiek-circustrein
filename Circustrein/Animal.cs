@@ -12,6 +12,8 @@ namespace Circustrein
         public string name { get; set;}
         public int format { get; set; }
         public string  type{ get; set;}
+
+        public bool isAdded { get; set; }
      
 
         
@@ -22,8 +24,5 @@ namespace Circustrein
             format = animalFormat;
             type = animalType;
         }
-
-        
-
     }
 }
