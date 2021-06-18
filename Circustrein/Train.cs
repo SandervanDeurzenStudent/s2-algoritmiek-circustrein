@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace Circustrein
 {
-    class Train
+    public class Train
     {
 
         List<Train> trainlist = new List<Train>();
@@ -20,7 +20,6 @@ namespace Circustrein
             {
                 lb.Items.Add("Animal " + animal.name + " with type " + animal.type);
             }
-           
             //Animalslist.Add(animalName, test);
             // eerst checken of het een carnivor/herbivore is.
             //kijken of ze in een waggon past
@@ -176,7 +175,6 @@ namespace Circustrein
                     wagonlist.Add(wagon);
                 }
             }
-           
             return true;
         }
 
@@ -204,11 +202,6 @@ namespace Circustrein
         }
         public void clearList()
         {
-            foreach (var animal in Animalslist)
-            {
-                animal.isAdded = false;
-            }
-            
             wagonlist.Clear();
             
         }

@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -20,14 +21,27 @@ namespace Circustrein
             InitializeComponent();
         }
 
-        private void Btn_send_Click(object sender, EventArgs e)
+        public void Btn_send_Click(object sender, EventArgs e)
         {
+            bool hasLetters;
             //animal format to int
             int animal_format = Convert.ToInt32(cb_format.Text);
-
+                
             Animal animal = new Animal(textBox1.Text, animal_format, cb_animalType.Text);
-            animalsList.Add(animal);
-            lb_added_desc.Items.Add(textBox1.Text + animal_format.ToString() + cb_animalType.Text);
+            hasLetters = animal.CheckForLetters(textBox1.Text, animal_format, cb_animalType.Text);
+            if (hasLetters == true)
+            {
+                animalsList.Add(animal);
+                lb_added_desc.Items.Add(textBox1.Text + " " + animal_format.ToString() + " " + cb_animalType.Text);
+            }
+            else
+            {
+                hasLetters = false;
+                MessageBox.Show("please only enter letters");
+            }
+              
+           
+           
         }
         private void cb_format_SelectedIndexChanged(object sender, EventArgs e)
         {

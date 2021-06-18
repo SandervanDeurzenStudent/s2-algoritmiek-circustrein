@@ -1,0 +1,2 @@
+C:\Users\Sander van Deurzen\source\repos\FONTYS\algoritme\Circustrein\s2-algoritmiek-circustrein\Circustrein.UnitTest\obj\Debug\Circustrein.UnitTest.csprojAssemblyReference.cache
+C:\Users\Sander van Deurzen\source\repos\FONTYS\algoritme\Circustrein\s2-algoritmiek-circustrein\Circustrein.UnitTest\obj\Debug\Circustrein.UnitTest.csproj.CoreCompileInputs.cache

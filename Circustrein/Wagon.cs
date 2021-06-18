@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Circustrein
 {
-    class Wagon
+    public class Wagon
     {
         public int maxSize { get; set; } = 10;
         public string wagonType { get; set; }
